@@ -1,1 +1,19 @@
-<p>ver-pais works!</p>
+<h3>Detalle</h3>
+
+<div class="container">
+<div class="row" >
+  <div class="col">
+  <ul class="row" *ngFor="let item of paises">
+  <li class="list-group-item"><img style="width:25px;" src="{{item.flags.png}}"></li>
+  <li class="list-group-item">País: {{item.name.common}}</li>
+  <li class="list-group-item">Capital: {{item.capital}}</li>
+  <li class="list-group-item">Región: {{item.region}}</li>
+  <li class="list-group-item">Población: {{item.population}}</li>
+  <li class="list-group-item">Lenguas: {{item.languages}}</li>
+  <li class="list-group-item">Monedas: {{item.currencies}}</li>
+  <li class="list-group-item">Continente: {{item.continents}}</li>
+  <li class="list-group-item">Área: {{item.area}}</li>
+</ul>
+</div>
+</div>
+</div>

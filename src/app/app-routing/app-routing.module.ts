@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { PorPaisComponent } from '../paises/components/por-pais/por-pais.component';
 import { PorRegionComponent } from '../paises/components/por-region/por-region.component';
 import { PorCapitalComponent } from '../paises/components/por-capital/por-capital.component';
+import { VerPaisComponent } from '../paises/components/ver-pais/ver-pais.component';
 
 const routes:Routes=[
   {
@@ -21,7 +22,7 @@ const routes:Routes=[
   },
   {
     path:'pais/:id',
-    component:PorPaisComponent,
+    component:VerPaisComponent,
   },
   {
     path:'*',

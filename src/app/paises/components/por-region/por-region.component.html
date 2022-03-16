@@ -1,1 +1,16 @@
-<p>por-region works!</p>
+
+    <app-pais-input (onEnter)="buscar($event)"></app-pais-input>
+
+
+    <hr>
+
+    <div *ngIf="existeError" class="alert alert-danger">
+      No se encontraron resultados en la búsqueda.
+    </div>
+
+    <div class="row" *ngIf="!existeError">
+      <div class="col">
+        <app-pais-tabla [paises]="paises"></app-pais-tabla>
+      </div>
+    </div>
+

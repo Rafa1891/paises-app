@@ -4,7 +4,9 @@
       <th>#</th>
       <th>Bandera</th>
       <th>Nombre</th>
+      <th>Capital</th>
       <th>Población</th>
+      <th>Región</th>
     </tr>
   </thead>
   <tbody>
@@ -12,7 +14,9 @@
       <td>{{i+1}}</td>
       <td><img style="width:25px;" src="{{item.flags.png}}"></td>
       <td>{{item.name.common}}</td>
+      <td>{{item.capital}}</td>
       <td>{{item.population}}</td>
+      <td>{{item.region}}</td>
       <td><a [routerLink]="['/pais',item.cca2]">ver...</a></td>
     </tr>
   </tbody>

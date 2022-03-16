@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 import { AppComponent } from './app.component';
 import { PaisesModule } from './paises/paises.module';
 import { SharedModule } from './shared/shared.module';
+//importar manualmente
+import {HttpClientModule} from '@angular/common/http';
 
-import {HttpClientModule} from '@angular/common/http';//importar manualmente
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+
   ],
   imports: [
     BrowserModule,
